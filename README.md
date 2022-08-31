@@ -8,6 +8,8 @@ You should put the code in this `findoutlie` directory on your Python PATH.
 
 This README file has instructions on how to get, validate and process the data.
 
+# I changed it.
+
 ## Get the data
 
 ```
@@ -50,7 +52,7 @@ This should print output to the terminal of form:
 
 Where `<filename>` is the name of the image that has outlier scans, and
 `<outlier_index>` is an index to the volume in the 4D image that you have
-identified as an outlier.  0 refers to the first volume.  For example (these
+identified as an outlier. 0 refers to the first volume. For example (these
 outlier IDs are completely random, for illustration):
 
 ```
