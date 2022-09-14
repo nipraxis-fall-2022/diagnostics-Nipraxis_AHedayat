@@ -3,6 +3,7 @@
 
 # Any imports you need
 # +++your code here+++
+import numpy as np
 
 
 def dvars(img):
@@ -29,4 +30,10 @@ def dvars(img):
     # You may be be able to solve this in four lines, without a loop.
     # But solve it any way you can.
     # This is a placeholder, replace it to write your solution.
-    raise NotImplementedError('Code up this function')
+
+    data = img.get_fdata()
+    data_1d = np.reshape(data, (-1, data.shape[-1]))
+    diff_vols = np.diff(data_1d, axis=1)
+    return np.sqrt(np.mean(diff_vols ** 2, axis=0))
+
+    # raise NotImplementedError('Code up this function')

@@ -5,6 +5,7 @@ You can run the tests from the root directory (containing ``README.md``) with::
     python3 -m pytest .
 """
 
+from cmath import log
 import numpy as np
 
 import nibabel as nib
